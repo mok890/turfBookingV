@@ -1,0 +1,9 @@
+.poster{
+    
+    height: 39rem;
+    width: 100vw;
+    margin-left: -8px;
+    margin-top: -4.1rem;
+    z-index: 0;
+    opacity: 2;
+}

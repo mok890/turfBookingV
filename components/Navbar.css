@@ -1,0 +1,98 @@
+.navbar {
+  /* Background color applied to navbar */
+  color: #000000;
+  padding: 20px px;
+  margin: -8px;
+
+  z-index: 1000; /* Ensure navbar is above other elements */
+}
+
+.navbar-container {
+  background-color: #0d0a0ab1; /* Background color applied to navbar */
+  color: #ff0000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Ensure navbar-toggle positions relative to navbar */
+  padding: 12px 40px;
+}
+
+.navbar-brand a {
+  padding-left: 1rem;
+  color: #fffbfbd1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+   color: #fffbfbd1;
+  display: none;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-right: 1rem;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+   color: #fffbfbd1;    
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0 0.8rem;
+}
+
+.navbar-links a:hover {
+  color: #fa7d7d;
+}
+
+/* Ensure the image is behind the navbar */
+.background-image {
+  position: relative;
+  z-index: 999; /* Ensure the image is behind the navbar */
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999; /* Ensure navbar dropdown is above other elements */
+  }
+
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+}

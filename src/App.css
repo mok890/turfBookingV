@@ -1,16 +1,14 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+      margin: px;
+  /* background-image: url("https://pehlayakshar.org/wp-content/uploads/new-bg.png"); */
+  /* background-color: rgb(255, 255, 255); */
 }
 
-.resp-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+@media only screen and (max-width: 620px) {
+
+  #root{
+    width:180%;
+  }
 }
-
-
-
